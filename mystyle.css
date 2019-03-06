@@ -1,0 +1,78 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+}
+div > p {white-space: normal
+	}
+h2{font-size: 25px;}
+h1{font-size: 40px;
+display: block;
+margin: 15px auto;}
+#header{
+	width: 100%;
+	background-color: grey;
+	min-height: 30px; 
+}
+#header p{
+	font-size: 20px;
+}
+.container {
+	position: relative;
+	padding: 10px;
+	max-width: 1100px;
+	margin: 0 auto;
+	background-color: lightblue;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+#banner{
+	background-color: #0039bf;
+	font-size: 40px;
+	color: #f7f2f2;
+	min-height: 100px;
+	text-align: center;
+}
+#content{
+	white-space: nowrap;
+	background-color: #fff;
+	min-height: 100px;
+}
+#content > label {
+	cursor: pointer;
+	display: inline-block;
+	width: 20%;
+	position: relative;
+}
+#content > input {
+	display:none;
+	position: absolute;	
+
+			}
+input:checked + label {
+	background: #999;
+}
+#content > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+#content > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+#content > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+#content > input:nth-of-type(4):checked ~ div:nth-of-type(4) {
+	display: block;
+}
+input ~ div{
+	position: relative;
+	display: none;
+	
+}
+
+.block {
+	display: inline-block;
+	width: 50%;
+	height: 200px;
+	background-color: grey;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
