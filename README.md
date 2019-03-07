@@ -1,1 +1,1 @@
-My attempts to update our labs wevsite
+My attempts to update our labs website
