@@ -1,0 +1,25 @@
+
+html,body {
+	height:100%; /* needed for container min-height */
+}
+
+.containercustom{
+	position:relative; /* needed for footer positioning*/
+    margin:0 auto;
+    padding: 0;
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+
+	min-height:100%; /* real browsers */
+}
+
+.contentcolumns {
+	padding:1em 1em 5em; /* bottom padding for footer */
+}
+
+
+.footercustom {
+	position:absolute;
+	width:100%;
+    bottom:0; /* stick to bottom */
+}

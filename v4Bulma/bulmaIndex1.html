@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bulma! NovoFEL</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    <style>
-      a {
-        color: red;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body body style="height:100%">
+    <div class="containercustom">
       <section class="hero has-background-link">
         <div class="hero-body">
           <div class="container has-text-centered">
@@ -22,7 +19,7 @@
         </div>
       </section>
 
-      <div class="columns" style="margin:0">
+      <div class="columns">
             <div class="column is-narrow has-background-dark" style="padding:1em 1em">            
                 <aside class="menu ">
                     <p class="menu-label has-text-white">
@@ -35,9 +32,9 @@
                     </ul>                  
                   </aside>
             </div>
-            <div class="column has-background-white" >
+            <div class="column has-background-white contentcolumns">
                 <div class="container" style="padding:1em 1.5em">
-                    <div >
+                    <div>
                         <iframe style="height: 600px " 
                         src=https://www.researchgate.net/plugins/department?publications=true&height=1000&width=600&theme=light&type=department&installationId=5a6ac4cb48954c8842682b72>
                         </iframe></div>
@@ -86,10 +83,11 @@
                 </div>
             </div>
           </div>
-    <footer class="footer">
+    <footer class="footer footercustom has-background-danger">
         <div class="content has-text-centered">
             
         </div>
     </footer>
+  </div>
   </body>
 </html>
